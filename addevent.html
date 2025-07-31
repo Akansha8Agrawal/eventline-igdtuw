@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add New Event - EventLine IGDTUW</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Add New Event</h2>
+  <form action="submit-event.js" method="POST">
+    <label>Event Title:</label>
+    <input type="text" name="title" required><br><br>
+
+    <label>Date:</label>
+    <input type="date" name="date" required><br><br>
+
+    <label>Time:</label>
+    <input type="time" name="time" required><br><br>
+
+    <label>Location:</label>
+    <input type="text" name="location" required><br><br>
+
+    <label>Image URL:</label>
+    <input type="text" name="image" placeholder="https://example.com/image.jpg"><br><br>
+
+    <label>Description:</label>
+    <textarea name="description" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit">Add Event</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Upcoming Events</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .event-card {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Upcoming College Events</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="login.html">Admin Login</a>
+    </nav>
+  </header>
+
+  <section id="eventContainer">
+    <!-- Events will load here -->
+  </section>
+
+  <script>
+    const container = document.getElementById("eventContainer");
+
+    // Get events from localStorage
+    const events = JSON.parse(localStorage.getItem("events")) || [];
+
+    if (events.length === 0) {
+      container.innerHTML = "<p>No events posted yet.</p>";
+    } else {
+      events.forEach(event => {
+        const card = document.createElement("div");
+        card.className = "event-card";
+        card.innerHTML = `
+          <h2>${event.title}</h2>
+          <p><strong>Date:</strong> ${event.date}</p>
+          <p><strong>Time:</strong> ${event.time}</p>
+          <p><strong>Location:</strong> ${event.location}</p>
+          <p>${event.details}</p>
+        `;
+        container.appendChild(card);
+      });
+    }
+  </script>
+</body>
+</html>
