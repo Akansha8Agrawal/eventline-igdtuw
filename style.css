@@ -91,4 +91,33 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.university-header {
+  background-color: #5D3A00; /* brown */
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  text-align: left; /* or center if you want */
+}
+
+.user-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 8px 20px;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+}
+
+.user-links a {
+  color: #5D3A00;
+  text-decoration: none;
+  margin-left: 12px;
+  font-weight: 500;
+}
+
+.user-links a:hover {
+  text-decoration: underline;
+}
 
