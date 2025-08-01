@@ -120,4 +120,50 @@ header {
 .user-links a:hover {
   text-decoration: underline;
 }
+/* Header bar layout */
+.header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Left Title */
+.logo-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.eventline {
+  color: green;
+}
+
+.igdtuw {
+  color: red;
+}
+
+/* Search Input Field */
+.search-container {
+  position: relative;
+}
+
+.search-container .search-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: gray;
+}
+
+.search-container input {
+  padding: 8px 14px 8px 34px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  width: 320px;
+}
 
