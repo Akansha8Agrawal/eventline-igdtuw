@@ -71,4 +71,24 @@ footer {
   background-color: #f2f2f2;
   font-size: 0.9rem;
 }
+.university-bar {
+  background-color: #5D3A00; /* deep brown */
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+/* adjust existing header if needed */
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
