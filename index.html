@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EventLine | IGDTUW</title>
   <link rel="stylesheet" href="style.css">
+  <!-- FullCalendar CSS -->
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+
+<!-- FullCalendar JS -->
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
+
 </head>
 <body>
 
@@ -50,6 +56,29 @@
   <div class="tall"><img src="images/image 14.jpeg" alt="image 14"></div>
     
   </div>
+
+  <!-- RIGHT: Calendar -->
+  <div class="calendar-box">
+    <div id="calendar"></div>
+  </div>
+
+<script src="script.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      selectable: true,
+      dateClick: function(info) {
+        // Redirect to event page for the selected date
+        window.location.href = 'events.html?date=' + info.dateStr;
+      }
+    });
+    calendar.render();
+  });
+</script>
+
 
 </body>
 </html>
