@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
       right: 'dayGridMonth,dayGridWeek'
     },
     dateClick: function (info) {
-      // Redirect to event page (example: /events/2025-08-04)
       const clickedDate = info.dateStr;
       window.location.href = `/events/${clickedDate}`;
     },

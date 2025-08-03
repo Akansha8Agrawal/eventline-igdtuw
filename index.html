@@ -2,45 +2,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EventLine | IGDTUW</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+
   <!-- FullCalendar CSS -->
-<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
-
-<!-- FullCalendar JS -->
-<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
-
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet" />
+  <!-- FullCalendar JS -->
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.js"></script>
 </head>
 <body>
-
+  <!-- Top Bar -->
   <div class="topbar">
-    <!-- College name -->
     <div class="college-name">Indira Gandhi Delhi Technical University for Women</div>
-
-    <!-- Navbar with EventLine + Links -->
     <div class="navbar">
       <div class="logo">
         <span class="eventline">EventLine</span> | <span class="igdtuw">IGDTUW</span>
       </div>
-
       <div class="nav-links">
         <a href="#">Get Help</a>
         <a href="#">Login</a>
         <a href="#">Sign Up</a>
       </div>
     </div>
-
-    <!-- Search bar -->
     <div class="search-container">
-      <input type="text" placeholder="Search for events, places, department">
+      <input type="text" placeholder="Search for events, places, department" />
     </div>
   </div>
 
-  <!-- Collage Starts Here -->
-  <div class="photo-collage">
-    <div class="tall"><img src="images/image 1.jpg" alt="image 1"></div>
+  <!-- Main Section: Photo Collage + Calendar -->
+  <section class="main-section">
+    <div class="photo-collage">
+      <div class="tall"><img src="images/image 1.jpg" alt="image 1"></div>
   <div class="wide"><img src="images/image 2.jpg" alt="image 2"></div>
   <div><img src="images/image 3.jpg" alt="image 3"></div>
   <div class="tall"><img src="images/image 4.jpeg" alt="image 4"></div>
@@ -54,31 +48,14 @@
   <div class="wide"><img src="images/image 12.jpg" alt="image 12"></div>
   <div><img src="images/image 13.jpeg" alt="image 13"></div>
   <div class="tall"><img src="images/image 14.jpeg" alt="image 14"></div>
-    
-  </div>
+      
+    </div>
 
-  <!-- RIGHT: Calendar -->
-  <div class="calendar-box">
-    <div id="calendar"></div>
-  </div>
+    <div class="calendar-box">
+      <div id="calendar"></div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      selectable: true,
-      dateClick: function(info) {
-        // Redirect to event page for the selected date
-        window.location.href = 'events.html?date=' + info.dateStr;
-      }
-    });
-    calendar.render();
-  });
-</script>
-
-
+  <script src="script.js"></script>
 </body>
 </html>
