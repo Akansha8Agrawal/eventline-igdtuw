@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5e3b14;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.events-container {
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.events-container h2 {
+  color: #5e3b14;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f3d9b5;
+  padding-bottom: 5px;
+}
+
+.event-section {
+  margin-bottom: 40px;
+}
+
+.event-card {
+  display: flex;
+  background-color: #fff3d4;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.02);
+}
+
+.event-card img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.event-info .category {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.event-info h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.event-info p {
+  margin: 6px 0;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .event-card img {
+    width: 100%;
+  }
+
+  .event-info {
+    text-align: center;
+  }
+}
