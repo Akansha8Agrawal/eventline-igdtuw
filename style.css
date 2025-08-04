@@ -118,5 +118,19 @@ body {
     justify-content: flex-end;
   }
 }
+@media screen and (max-width: 768px) {
+  .main-section {
+    flex-direction: column;
+  }
+
+  .photo-collage {
+    column-count: 2;
+    max-width: 100%;
+  }
+
+  #calendar {
+    max-width: 100%;
+  }
+}
 
 

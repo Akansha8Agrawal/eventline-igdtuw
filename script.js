@@ -1,3 +1,5 @@
+console.log("Calendar script loaded");
+
 document.addEventListener('DOMContentLoaded', function () {
   const calendarEl = document.getElementById('calendar');
 
