@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #fffdf8;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5e3b14;
+  color: white;
+  padding: 15px 30px;
+}
+
+.navbar nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #5e3b14;
+}
+
+.intro {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.offerings ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.offerings li {
+  margin: 8px 0;
+}
+
+.team {
+  margin-top: 40px;
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile-card {
+  background-color: #fff6ea;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+}
+/* Make team profiles stack on smaller screens */
+@media (max-width: 768px) {
+  .profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 90%; /* Full width with padding */
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}

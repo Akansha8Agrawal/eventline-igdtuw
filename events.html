@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventLine IGDTUW - Events</title>
+  <link rel="stylesheet" href="events.css" />
+</head>
+<body>
+
+  <!-- 🔷 NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">EventLine | IGDTUW</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="admin.html">Admin Dashboard</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>Events</h1>
+    <p>Discover engaging events happening on campus</p>
+  </header>
+
+  <!-- 🔷 TABS -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('trending')">Trending</button>
+    <button class="tab-btn" onclick="showTab('upcoming')">Upcoming</button>
+  </div>
+
+  <!-- 🔷 EVENT SECTIONS -->
+  <main class="events-container">
+    
+    <!-- Trending -->
+    <section id="trending" class="tab-content active">
+      <h2>Trending Events</h2>
+      <div class="event-card">
+        <img src="images/image1.jpg" alt="Orientation Poster">
+        <div class="event-info">
+          <span class="category">Talk/Others</span>
+          <h3>Orientation Programme</h3>
+          <p>📅 Tue, Aug 12, 2025</p>
+          <p>🕒 10 AM – 5 PM</p>
+          <p>📍 Campus Ground</p>
+          <p>🗺️ <a href="https://maps.google.com?q=IGDTUW" target="_blank">View Map</a></p>
+          <a class="register-btn" href="#">Register</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upcoming -->
+    <section id="upcoming" class="tab-content">
+      <h2>Upcoming Events</h2>
+      <div class="event-card">
+        <img src="images/image2.jpg" alt="Music Recital Poster">
+        <div class="event-info">
+          <span class="category">Performance</span>
+          <h3>Summer Voice Class Recital</h3>
+          <p>📅 Wed, Aug 14, 2025</p>
+          <p>🕒 7:30 PM – 9 PM</p>
+          <p>📍 Braun Music Center</p>
+          <p>🗺️ <a href="https://maps.google.com?q=Braun+Music+Center" target="_blank">View Map</a></p>
+          <a class="register-btn" href="#">Register</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+      
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
