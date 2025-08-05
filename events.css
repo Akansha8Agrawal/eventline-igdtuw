@@ -1,101 +1,154 @@
+/* Reset + Fonts */
 body {
-  font-family: 'Segoe UI', sans-serif;
   margin: 0;
-  background: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfaf6;
 }
 
-.page-header {
-  background-color: #6d4c41;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #5e3c1c;
   color: white;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background-color: #d6b38c;
+  color: #000;
+}
+
+/* Header */
+.page-header {
+  padding: 30px;
   text-align: center;
-  padding: 20px;
+  background: #f0e6db;
 }
 
 .page-header h1 {
-  margin: 0;
-  font-size: 2rem;
+  margin-bottom: 10px;
+  font-size: 2.2em;
 }
 
+/* Tabs */
+.tabs {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  background: #d6b38c;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.tab-btn.active,
+.tab-btn:hover {
+  background: #5e3c1c;
+  color: white;
+}
+
+/* Events Layout */
 .events-container {
   padding: 20px;
-  max-width: 1000px;
-  margin: auto;
 }
 
-section h2 {
-  font-size: 1.5rem;
-  margin-top: 40px;
-  color: #6d4c41;
+.tab-content {
+  display: none;
 }
 
+.tab-content.active {
+  display: block;
+}
+
+/* Cards */
 .event-card {
-  background: white;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 20px 0;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-direction: column;
+  background: white;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .event-card img {
-  width: 200px;
+  width: 100%;
   height: auto;
-  border-radius: 10px;
 }
 
 .event-info {
-  flex: 1;
+  padding: 20px;
 }
 
 .event-info h3 {
   margin-top: 5px;
-  font-size: 1.25rem;
-  color: #333;
-}
-
-.event-info p {
-  margin: 5px 0;
 }
 
 .category {
+  font-size: 0.85em;
   font-weight: bold;
-  color: #b71c1c;
-  text-transform: uppercase;
-  font-size: 0.9rem;
+  color: #844c24;
 }
 
 .register-btn {
   display: inline-block;
   margin-top: 10px;
-  background-color: #6d4c41;
+  padding: 8px 14px;
+  background: #844c24;
   color: white;
-  padding: 8px 12px;
   border-radius: 6px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.register-btn:hover {
-  background-color: #5d4037;
+  text-align: center;
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (min-width: 768px) {
   .event-card {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
   }
 
   .event-card img {
-    width: 100%;
-    max-width: 350px;
+    width: 250px;
+    height: 100%;
+    object-fit: cover;
   }
 
   .event-info {
-    text-align: center;
+    flex: 1;
   }
 }
+
+
 

@@ -8,15 +8,34 @@
 </head>
 <body>
 
+  <!-- 🔷 NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">EventLine | IGDTUW</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="events.html" class="active">Events</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="admin.html">Admin Dashboard</a></li>
+    </ul>
+  </nav>
+
   <header class="page-header">
-    <h1> EventLine IGDTUW</h1>
+    <h1>Events</h1>
     <p>Discover engaging events happening on campus</p>
   </header>
 
-  <main class="events-container">
+  <!-- 🔷 TABS -->
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab('trending')">Trending</button>
+    <button class="tab-btn" onclick="showTab('upcoming')">Upcoming</button>
+  </div>
 
-    <section>
-      <h2> Trending Events</h2>
+  <!-- 🔷 EVENT SECTIONS -->
+  <main class="events-container">
+    
+    <!-- Trending -->
+    <section id="trending" class="tab-content active">
+      <h2>Trending Events</h2>
       <div class="event-card">
         <img src="images/image1.jpg" alt="Orientation Poster">
         <div class="event-info">
@@ -31,8 +50,9 @@
       </div>
     </section>
 
-    <section>
-      <h2> Upcoming Events</h2>
+    <!-- Upcoming -->
+    <section id="upcoming" class="tab-content">
+      <h2>Upcoming Events</h2>
       <div class="event-card">
         <img src="images/image2.jpg" alt="Music Recital Poster">
         <div class="event-info">
@@ -45,24 +65,24 @@
           <a class="register-btn" href="#">Register</a>
         </div>
       </div>
-
-      <div class="event-card">
-        <img src="images/image3.jpg" alt="Film Poster">
-        <div class="event-info">
-          <span class="category">Film/Screening</span>
-          <h3>Paper Lanterns Documentary</h3>
-          <p>📅 Wed, Aug 6, 2025</p>
-          <p>🕒 4:15 PM – 5:45 PM</p>
-          <p>📍 Bishop Auditorium</p>
-          <p>🗺️ <a href="https://maps.google.com?q=Bishop+Auditorium" target="_blank">View Map</a></p>
-          <a class="register-btn" href="#">Register</a>
-        </div>
-      </div>
     </section>
-
   </main>
 
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const buttons = document.querySelectorAll('.tab-btn');
+      
+      tabs.forEach(tab => tab.classList.remove('active'));
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
 </body>
 </html>
+
+
 
 
