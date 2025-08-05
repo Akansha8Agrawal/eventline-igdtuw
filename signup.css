@@ -1,126 +1,154 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f5f5f5;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  color: #333;
 }
 
-.uni-header {
+/* Top Bar */
+.top-bar {
+  background-color: #854d1e;
+  color: white;
   display: flex;
   justify-content: space-between;
-  background-color: #7b4c27;
-  color: white;
-  padding: 10px 20px;
-  font-size: 14px;
+  align-items: center;
+  padding: 10px 30px;
   font-weight: bold;
+  border-bottom: 4px solid #5c3a1e;
 }
 
+.top-bar .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 25px;
+}
+
+.top-bar .right {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Events Heading */
+.events-call {
+  margin: 20px 30px;
+  font-size: 24px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.igdtuw-bold {
+  font-weight: 900;
+  font-size: 26px;
+  color: #5c3a1e;
+}
+
+.pipe {
+  font-size: 28px;
+  font-weight: 300;
+}
+
+/* Sign Up Container */
 .signup-container {
-  background: white;
-  width: 350px;
-  margin: 40px auto;
-  padding: 30px 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
 }
 
-h2 {
+.signup-container h2 {
   text-align: center;
+  font-size: 28px;
   margin-bottom: 25px;
 }
 
 .icon {
-  font-size: 22px;
-  margin-right: 8px;
+  font-size: 28px;
+  margin-right: 5px;
 }
 
-label {
-  display: block;
-  margin-bottom: 6px;
-  font-weight: 600;
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-input {
-  width: 100%;
+form label {
+  font-weight: 500;
+}
+
+form input {
   padding: 10px;
-  margin-bottom: 15px;
-  background: #fcf5dc;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  font-size: 14px;
+  font-size: 16px;
+  background-color: #fef7e9;
+  border: none;
+  border-radius: 10px;
 }
 
 .signup-btn {
-  width: 100%;
-  background-color: #7b4c27;
+  background-color: #854d1e;
   color: white;
   padding: 10px;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
 }
 
-.signup-btn:hover {
-  background-color: #5e391c;
-}
-
 .divider {
   text-align: center;
-  color: gray;
-  font-size: 14px;
   margin: 20px 0;
   position: relative;
+  color: #444;
 }
 
 .divider::before,
 .divider::after {
   content: "";
+  height: 1px;
+  width: 30%;
+  background-color: #ccc;
   position: absolute;
   top: 50%;
-  width: 40%;
-  height: 1px;
-  background-color: #ccc;
 }
 
 .divider::before {
   left: 0;
 }
+
 .divider::after {
   right: 0;
 }
 
-.google-btn {
-  width: 100%;
-  border: 1px solid #ccc;
-  padding: 8px;
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.google-btn img {
-  width: 18px;
-  height: 18px;
-}
-
-.login-text {
+.google-signin {
   text-align: center;
-  margin-top: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Login link */
+.login-link {
+  text-align: center;
   font-size: 14px;
 }
 
-.login-text a {
-  color: #7b4c27;
+.login-link a {
   text-decoration: none;
+  color: #000;
+  font-weight: 500;
 }
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: #fffdf8;
-  color: #333;
-  border-bottom: 15px solid #5e3b14; /* Thicker brown bottom border */
+
+/* Footer brown bar */
+.footer-bar {
+  background-color: #854d1e;
+  height: 30px;
+  margin-top: 30px;
 }
+
+
+

@@ -1,45 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sign Up - EventLine IGDTUW</title>
-  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="signup.css"/>
 </head>
 <body>
-  <!-- University Header -->
-  <header class="uni-header">
-    <div class="left">INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</div>
-    <div class="right">EventLine IGDTUW</div>
-  </header>
 
-  <!-- Main Form Container -->
+  <!-- Top Header -->
+  <div class="top-bar">
+    <div class="left">
+      INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
+      <img src="images/logo.png" alt="logo" class="logo" />
+    </div>
+    <div class="right">
+      EventLine <strong>IGDTUW</strong>
+    </div>
+  </div>
+
+  <!-- Events Call Header -->
+  <div class="events-call">
+    <span class="igdtuw-bold">IGDTUW</span> <span class="pipe">|</span> EVENTS CALL
+  </div>
+
+  <!-- Sign Up Form -->
   <div class="signup-container">
     <h2><span class="icon">👤</span> Sign Up</h2>
+
     <form>
-      <label>Name*</label>
-      <input type="text" placeholder="Enter your name" required>
+      <label for="name">Name*</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
 
-      <label>Email*</label>
-      <input type="email" placeholder="Enter your email" required>
+      <label for="email">Email*</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
 
-      <label>Password*</label>
-      <input type="password" placeholder="Enter your password" required>
+      <label for="password">Password*</label>
+      <input type="password" id="password" placeholder="Enter password" required>
 
-      <label>Role*</label>
-      <input type="text" placeholder="(Student / admin)" required>
+      <label for="role">Role*</label>
+      <input type="text" id="role" placeholder="(Student / admin)" required>
 
       <button type="submit" class="signup-btn">Sign up</button>
     </form>
 
-    <div class="divider">or continue with</div>
+    <div class="divider">
+      <span>or continue with</span>
+    </div>
 
-    <button class="google-btn">
-  <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google logo" />
-  <span>Continue with Google</span>
-</button>
+    <div class="google-signin">G</div>
 
-
-    <p class="login-text">Already have an account? <a href="#">Log In</a></p>
+    <p class="login-link">Already have an account? <a href="#">Log In</a></p>
   </div>
+
+  <!-- Footer Bar -->
+  <div class="footer-bar"></div>
+
 </body>
 </html>
+
