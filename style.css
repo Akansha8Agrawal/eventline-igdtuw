@@ -1,145 +1,38 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+body {
+  font-family: Georgia, serif;
+  background-color: #f9f9f9;
 }
 
-body, html {
-  height: 100%;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Top and Footer Bar */
 .top-bar {
-  background-color: #77492e;
+  background-color: #804000;
   color: white;
-  padding: 12px 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
 }
 
-.top-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.inline-logo {
-  width: 35px;
-  height: 35px;
-}
-
-.university-name {
+.uni-name {
   font-weight: bold;
-  font-size: 16px;
 }
 
-.top-right {
-  font-size: 14px;
-  font-weight: 500;
+.igdtuw-text {
+  color: #9b5500;
+  font-weight: bold;
 }
 
-/* Main content */
-.login-container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 40px 30px;
+.calendar-container {
+  background-color: #fff;
 }
 
-.title {
-  margin-left: 10px;
-  margin-bottom: 30px;
-  display: flex;
-  align-items: baseline;
-  gap: 6px;
+.logo-img {
+  height: 30px;
+  width: auto;
+  border-radius: 50%;
 }
-
-.igdtuw {
-  font-size: 36px;
-  color: #77492e;
-  font-weight: 900;
-  letter-spacing: 1px;
-}
-
-.eventcall {
-  font-size: 18px;
-  font-weight: 400;
-  color: #000;
-}
-
-/* Login form */
-.login-box {
-  width: 100%;
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.login-title {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #111;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-label {
-  text-align: left;
-  font-weight: 500;
-  color: #222;
-  margin-top: 10px;
-}
-
-input {
-  padding: 12px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background-color: #fefae0;
-  font-size: 15px;
-}
-
-.forgot-password {
-  text-align: right;
-  margin-top: -5px;
-  margin-bottom: 10px;
-}
-
-.forgot-password a {
-  font-size: 14px;
-  color: #333;
-  text-decoration: none;
-}
-
-.btn {
-  padding: 14px;
-  font-size: 16px;
-  border: none;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-}
-
-.login-btn {
-  background-color: #77492e;
-}
-
-.create-btn {
-  background-color: #a56c3c;
-}
-
-/* Bottom bar */
-.footer-bar {
-  height: 16px;
-  background-color: #77492e;
-  margin-top: auto;
+/* Responsive spacing */
+@media (max-width: 767px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: start !important;
+    gap: 0.5rem;
+  }
 }
