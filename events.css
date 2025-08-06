@@ -49,6 +49,15 @@ a {
   padding: 30px;
   text-align: center;
   background: #f0e6db;
+  
+  font-size: 24px; /* Make it bigger (increase number as needed) */
+  font-weight: 600; /* Make it bold */
+  
+  margin-top: 10px;
+  color: #222;
+  font-family: Georgia, serif;
+
+
 }
 
 .page-header h1 {
@@ -148,6 +157,24 @@ a {
   .event-info {
     flex: 1;
   }
+}
+.events-call-heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 40px 10px;
+  font-family: 'Georgia', serif;
+}
+
+.events-call-heading .igd {
+  color: #8B4513; /* Dark brown */
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.events-call-heading .call {
+  color: #000;
+  font-weight: 400;
+  margin-left: 8px;
 }
 
 
