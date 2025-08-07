@@ -126,5 +126,54 @@
 </script>
 
 
+  
+<!-- BotUI container -->
+<div id="botui-app">
+  <bot-ui></bot-ui>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/botui/build/botui.min.js"></script>
+
+<script>
+  var botui = new BotUI('botui-app');
+
+  botui.message.add({
+    content: 'Hi! I’m your Event Assistant 🤖'
+  }).then(function () {
+    return botui.message.add({
+      content: 'Do you want help finding college events?'
+    });
+  }).then(function () {
+    return botui.action.button({
+      action: [
+        { text: 'Yes', value: 'yes' },
+        { text: 'No', value: 'no' }
+      ]
+    });
+  }).then(function (res) {
+    if (res.value === 'yes') {
+      botui.message.add({
+        content: 'Great! Let me show you the upcoming events 📅'
+      });
+    } else {
+      botui.message.add({
+        content: 'Alright! Let me know if you change your mind.'
+      });
+    }
+  });
+</script>
+<style>
+  #botui-app {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 350px;
+    z-index: 9999;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+</style>
+
 </body>
 </html>
