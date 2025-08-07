@@ -1,0 +1,104 @@
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  background-color: #fff;
+  color: #000;
+}
+
+header {
+  background-color: #884400;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.tagline {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.form-section,
+.events-section {
+  background-color: #fff3db;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 10px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+
+form label {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="url"],
+input[type="file"] {
+  width: 60%;
+  padding: 5px;
+}
+
+button {
+  padding: 6px 14px;
+  background-color: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  font-family: Georgia, serif;
+}
+
+button.delete {
+  background-color: #eee;
+  color: #000;
+}
+
+.event-row {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  font-family: Georgia, serif;
+}
+
+header, .navbar {
+  border: none; /* Removes any brown border at the bottom */
+}
+header {
+  background-color: #884400;
+  padding: 10px 20px;
+  color: white;
+  border-bottom: 4px solid #4d2600; /* BROWN BORDER at the bottom */
+}
+

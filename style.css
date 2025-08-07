@@ -310,3 +310,15 @@ body {
     border-bottom-right-radius: 30px !important;
   }
 }
+.signup-text {
+  color: #181716;
+  
+  text-decoration: none;
+}
+
+.signup-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
