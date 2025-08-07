@@ -2,7 +2,7 @@
 body {
   font-family: 'Georgia', serif;
   margin: 0;
-<<<<<<< HEAD
+
   padding-top: 20px;  
   background-color: #fff;
   color: #000;
@@ -10,15 +10,7 @@ body {
 
 .top-bar {
   background-color: #804000;
-=======
-  padding: 0;
-  background-color: #fff;
-  color: #2a2a2a;
-}
 
-.navbar {
-  background-color: #603813; /* Dark brown */
->>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
   color: white;
   display: flex;
   justify-content: space-between;
@@ -113,21 +105,7 @@ body {
   margin-left: 8px;
   margin-top: 30px;
   color: #333;
-=======
-.navbar .nav-links a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  padding: 6px 12px;
-  border-radius: 8px;
-  transition: background 0.3s, color 0.3s;
-}
 
-.navbar .nav-links a.active {
-  background-color: #c69c6d; /* Light brown */
-  color: black;
-  font-weight: bold;
->>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
 }
 
 .navbar .nav-links a:hover {
@@ -138,7 +116,7 @@ body {
 .navbar .nav-links i {
   margin-left: 10px;
   cursor: pointer;
-<<<<<<< HEAD
+
   font-family: Georgia, serif;
 }
 
@@ -161,17 +139,7 @@ button.delete {
   background-color: #804000;
   margin-top: 80px;
   width: 100%;
-=======
-  color: white;
-}
-.navbar .nav-links i {
-  margin-left: 10px;
-  cursor: pointer;
-  color: white;
-  padding: 6px 8px;
-  border-radius: 50%;
-  transition: background 0.3s, color 0.3s;
->>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
+
 }
 
 .navbar .nav-links i:hover {
@@ -297,7 +265,7 @@ button.delete {
   border: 1px solid #aaa;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, border 0.3s;
+  transition:  0.3s, color 0.3s, border 0.3s;
 }
 
 .actions button:hover {
@@ -320,7 +288,7 @@ button.delete {
   border: 1px solid #aaa;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, border 0.3s;
+  transition: 0.3s, color 0.3s, border 0.3s;
 }
 
 .actions button:hover {
