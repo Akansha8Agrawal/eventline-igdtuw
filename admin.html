@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<<<<<<< HEAD
+  <meta charset="UTF-8">
+  <title>Admin Dashboard | EventLine IGDTUW</title>
+  <link rel="stylesheet" href="admin.css">
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="top-bar">
+  <div class="top-bar-left">
+    <span>EventLine IGDTUW</span>
+  </div>
+
+  <div class="top-bar-right">
+    <nav class="nav-links">
+      <a href="index.html" class="text-link">Home</a>
+      <a href="events.html" class="text-link">Events</a>
+      <a href="#" class="text-link">Admin Dashboard</a>
+      <a href="#" class="text-link">Gallery</a>
+    </nav>
+
+    <div class="icon-buttons">
+      <a href="#"><i class="fa fa-search glow-icon"></i></a>
+      <a href="#"><i class="fa fa-user glow-icon"></i></a>
+      <a href="#"><i class="fa fa-info-circle glow-icon"></i></a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Header Section -->
+  <div class="text-start mb-4">
+    <h2 class="heading-igdtuw">
+      <span class="igdtuw-text">IGDTUW |</span>
+      <span class="event-call-text">EVENTS CALL</span>
+    </h2>
+  </div>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">EventLine IGDTUW</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="#" class="active">Admin Dashboard</a>
+      <a href="#">Gallery</a>
+      <i class="fas fa-search"></i>
+      <i class="fas fa-user"></i>
+      <i class="fas fa-info-circle"></i>
+    </div>
+  </div>
+>>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
+
+  <!-- Header -->
+  <div class="header">
+    <h1><i class="fas fa-wrench"></i> Admin Dashboard</h1>
+    <p>‘One Dashboard. Every Event. Total Control’</p>
+  </div>
+
+  <!-- Add New Event -->
+  <div class="add-event-section">
+    <h2>Add New Event</h2>
+    <form>
+      <label>Title:</label><input type="text" /><br />
+      <label>Date:</label><input type="date" /><br />
+      <label>Time:</label><input type="time" /><br />
+      <label>Upload Poster:</label><input type="file" /><br />
+      <label>Registration Link:</label><input type="text" placeholder="(Optional)" /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Your Events -->
+  <div class="your-events-section">
+    <h2><i class="fas fa-clipboard-list"></i> Your Events</h2>
+    
+    <div class="event">
+  <span class="event-title">Orientation</span>
+  <span class="event-date">August 12</span>
+  <div class="actions">
+    <button>Edit</button>
+    <button>Delete</button>
+  </div>
+
+</div>
+<div class="event">
+    <span class="event-title">Club Fest</span>
+    <span class="event-date">August 14</span>
+    <div class="actions">
+      <button>Edit</button>
+      <button>Delete</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <!-- Bottom Border -->
+  <div class="bottom-bar"></div>
+  <script>
+  // Handle Edit buttons
+  document.querySelectorAll('.your-events-section .event').forEach(eventRow => {
+    const editButton = eventRow.querySelector('button:first-of-type');
+    const deleteButton = eventRow.querySelector('button:last-of-type');
+
+    editButton.addEventListener('click', () => {
+      const spans = eventRow.querySelectorAll('span');
+
+      const title = spans[0].innerText;
+      const date = spans[1].innerText;
+
+      // Replace spans with input fields
+      spans[0].innerHTML = `<input type="text" value="${title}" />`;
+      spans[1].innerHTML = `<input type="text" value="${date}" />`;
+
+      // Change Edit to Save
+      editButton.innerText = 'Save';
+
+      editButton.addEventListener('click', () => {
+        const newTitle = spans[0].querySelector('input').value;
+        const newDate = spans[1].querySelector('input').value;
+
+        spans[0].innerText = newTitle;
+        spans[1].innerText = newDate;
+
+        editButton.innerText = 'Edit';
+      }, { once: true });
+    });
+
+    // Optional: Delete functionality
+    deleteButton.addEventListener('click', () => {
+      eventRow.remove();
+    });
+  });
+</script>
+
+<<<<<<< HEAD
+    <section class="events-section">
+      <h2><i class="fas fa-calendar-alt"></i> Your Events</h2>
+      <div class="event-row">
+        <span>Orientation</span>
+        <span>August 12</span>
+        <button>Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+      <div class="event-row">
+        <span>Club Fest</span>
+        <span>August 14</span>
+        <button>Edit</button>
+        <button class="delete">Delete</button>
+      </div>
+    </section>
+  </main>
+  <!-- Bottom Border -->
+<div class="bottom-border"></div>
+=======
+>>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
+</body>
+</html>
+
+
+
+
