@@ -1,6 +1,8 @@
+/* General Styles */
 body {
-  font-family: "Georgia", serif;
+  font-family: 'Georgia', serif;
   margin: 0;
+<<<<<<< HEAD
   padding-top: 20px;  
   background-color: #fff;
   color: #000;
@@ -8,14 +10,37 @@ body {
 
 .top-bar {
   background-color: #804000;
+=======
+  padding: 0;
+  background-color: #fff;
+  color: #2a2a2a;
+}
+
+.navbar {
+  background-color: #603813; /* Dark brown */
+>>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
   color: white;
   display: flex;
   justify-content: space-between;
+  padding: 12px 20px;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  display: flex;
   align-items: center;
   padding: 10px 40px;
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 .top-bar-right {
   display: flex;
   align-items: center;
@@ -88,55 +113,32 @@ body {
   margin-left: 8px;
   margin-top: 30px;
   color: #333;
+=======
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
 }
 
-main {
-  padding: 20px;
-  text-align: center;
+.navbar .nav-links a.active {
+  background-color: #c69c6d; /* Light brown */
+  color: black;
+  font-weight: bold;
+>>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
 }
 
-.tagline {
-  font-style: italic;
-  margin-bottom: 30px;
+.navbar .nav-links a:hover {
+  background-color: #c69c6d;
+  color: black;
 }
 
-.form-section,
-.events-section {
-  background-color: #fff3db;
-  padding: 20px;
-  margin: 20px auto;
-  width: 80%;
-  border-radius: 10px;
-}
-
-form {
-  display: grid;
-  gap: 10px;
-  justify-content: center;
-}
-
-form label {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 500px;
-  margin: auto;
-}
-
-input[type="text"],
-input[type="date"],
-input[type="time"],
-input[type="url"],
-input[type="file"] {
-  width: 60%;
-  padding: 5px;
-}
-
-button {
-  padding: 6px 14px;
-  background-color: white;
-  border: 1px solid #000;
+.navbar .nav-links i {
+  margin-left: 10px;
   cursor: pointer;
+<<<<<<< HEAD
   font-family: Georgia, serif;
 }
 
@@ -159,5 +161,182 @@ button.delete {
   background-color: #804000;
   margin-top: 80px;
   width: 100%;
+=======
+  color: white;
 }
+.navbar .nav-links i {
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 50%;
+  transition: background 0.3s, color 0.3s;
+>>>>>>> 4d5373a7d5a0aae5456a0d5e970066cc87b49550
+}
+
+.navbar .nav-links i:hover {
+  background-color: #c69c6d;
+  color: black;
+}
+
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin: 30px auto 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.header p {
+  font-size: 16px;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* Add New Event */
+.add-event-section {
+  background-color: #fff5e6;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto 20px;
+  border-radius: 5px;
+}
+
+.add-event-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.add-event-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-event-section label {
+  margin: 5px 0 2px;
+  width: 100%;
+  max-width: 300px;
+  text-align: left;
+}
+
+.add-event-section input {
+  padding: 6px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-event-section button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Your Events Section */
+.your-events-section {
+  background-color: #fff5e6;
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto 30px;
+  border-radius: 5px;
+}
+
+.your-events-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Event Row */
+.event {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin-bottom: 12px;
+  background-color: #fdf3e7;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Event Title */
+.event-title {
+  flex: 2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Event Date */
+.event-date {
+  flex: 1;
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+}
+
+/* Buttons on Right */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit & Delete Buttons */
+.actions button {
+  padding: 6px 14px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.actions button:hover {
+  background-color: #c69c6d;
+  color: black;
+  border-color: #c69c6d;
+  font-weight: bold;
+}
+
+/* Button Container */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.actions button {
+  padding: 6px 14px;
+  background-color: #eee;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.actions button:hover {
+  background-color: #c69c6d;
+  color: black;
+  border-color: #c69c6d;
+  font-weight: bold;
+}
+
+
+
+/* Bottom Brown Bar */
+.bottom-bar {
+  height: 15px;
+  background-color: #9c6c3f;
+}
+
+
 
