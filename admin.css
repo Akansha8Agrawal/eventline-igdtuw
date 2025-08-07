@@ -1,32 +1,93 @@
 body {
   font-family: "Georgia", serif;
   margin: 0;
+  padding-top: 20px;  
   background-color: #fff;
   color: #000;
 }
 
-header {
-  background-color: #884400;
-  padding: 10px 20px;
+.top-bar {
+  background-color: #804000;
   color: white;
-}
-
-.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 40px;
+  font-weight: 500;
 }
 
-.navbar nav a {
-  color: white;
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
   margin: 0 10px;
+  color: white;
   text-decoration: none;
+}
+
+.icon-buttons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  color: #804000;
   font-size: 16px;
 }
 
-.navbar nav a.active {
+/* ---------- WHITE SLIDING UNDERLINE ONLY FOR TEXT LINKS ---------- */
+.top-bar a.text-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-bar a.text-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.top-bar a.text-link:hover::after {
+  width: 100%;
+}
+
+
+
+.heading-igdtuw {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.igdtuw-text {
+  font-size: 40px;
   font-weight: bold;
-  text-decoration: underline;
+  color: #9b5500;
+}
+
+.event-call-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+  margin-top: 30px;
+  color: #333;
 }
 
 main {
@@ -92,13 +153,11 @@ button.delete {
   font-family: Georgia, serif;
 }
 
-header, .navbar {
-  border: none; /* Removes any brown border at the bottom */
-}
-header {
-  background-color: #884400;
-  padding: 10px 20px;
-  color: white;
-  border-bottom: 4px solid #4d2600; /* BROWN BORDER at the bottom */
+/* Bottom Brown Line */
+.bottom-border {
+  height: 30px;
+  background-color: #804000;
+  margin-top: 80px;
+  width: 100%;
 }
 
