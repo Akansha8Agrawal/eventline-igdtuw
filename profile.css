@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #a9744f;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+.navbar i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* IGDTUW Events Title */
+.logo-bar {
+    background-color: white;
+    padding: 15px 15px 5px;
+    color: #5a3b27;
+}
+.logo-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+.logo-bar .igd {
+    font-weight: bold;
+}
+.logo-bar .events {
+    font-weight: normal;
+}
+
+/* Profile Section */
+.profile-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.profile-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: black;
+    display: block;
+    margin: 0 auto 20px;
+}
+.profile-details {
+    width: 250px;
+    margin: auto;
+    text-align: left;
+}
+.profile-details label {
+    font-size: 16px;
+    color: #5a3b27;
+}
+.profile-details input {
+    width: 100%;
+    padding: 6px;
+    margin: 5px 0 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fef6e4;
+    font-size: 14px;
+}
+
+/* Edit Profile Button */
+.edit-btn {
+    background-color: #fef6e4;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.edit-btn:hover {
+    background-color: #f5e3c3;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    background-color: #a9744f;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
