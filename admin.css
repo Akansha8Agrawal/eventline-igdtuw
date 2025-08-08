@@ -2,7 +2,7 @@
 body {
   font-family: 'Georgia', serif;
   margin: 0;
-
+  
   padding-top: 20px;  
   background-color: #fff;
   color: #000;
@@ -10,20 +10,23 @@ body {
 
 .top-bar {
   background-color: #804000;
-
+  height: 60px;
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 12px 20px;
+
   align-items: center;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  padding: 0px 20px;
+  font-weight: 500;
 }
 
-.navbar .logo {
+.top-bar-left span {
   font-size: 18px;
-  font-weight: bold;
+  line-height: 60px; /* same as bar height */
 }
+
+
+
 
 .navbar .nav-links {
   display: flex;
@@ -32,20 +35,56 @@ body {
   font-weight: 500;
 }
 
-
+.top-bar-right i {
+  background-color: white;
+  color: #804000;
+  padding: 6px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  
+  font-size: 14px;
+  cursor: pointer;
+}
 .top-bar-right {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+}
+
+
+.navbar-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
   gap: 20px;
+  align-items: center;
 }
 
-.nav-links a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+
+.navbar-icons i {
+  background-color: white;
+  color: #804000;
+  border-radius: 50%;
+  padding: 6px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
-.icon-buttons a {
+
+
+
+.navbar a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -59,16 +98,15 @@ body {
 }
 
 /* ---------- WHITE SLIDING UNDERLINE ONLY FOR TEXT LINKS ---------- */
-.top-bar a.text-link {
+.nav-links a {
   position: relative;
+  margin: 0 10px;
   color: white;
   text-decoration: none;
-  margin: 0 12px;
   font-weight: 500;
-  transition: color 0.3s ease;
 }
 
-.top-bar a.text-link::after {
+.nav-links a::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -79,9 +117,16 @@ body {
   transition: width 0.3s ease;
 }
 
-.top-bar a.text-link:hover::after {
+.nav-links a:hover::after {
   width: 100%;
 }
+
+.navbar-icons i:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
 
 
 
@@ -96,15 +141,16 @@ body {
 .igdtuw-text {
   font-size: 40px;
   font-weight: bold;
-  color: #9b5500;
+  color: #804000;
 }
 
 .event-call-text {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   margin-left: 8px;
   margin-top: 30px;
-  color: #333;
+  color: #555;
+  font-style: normal;
 
 }
 
@@ -151,6 +197,7 @@ button.delete {
 /* Header Section */
 .header {
   text-align: center;
+  margin-top: 40px;
   margin: 30px auto 20px;
 }
 
@@ -170,6 +217,7 @@ button.delete {
   background-color: #fff5e6;
   padding: 20px;
   width: 80%;
+  margin-top: 30px;
   margin: 0 auto 20px;
   border-radius: 5px;
 }
@@ -204,11 +252,12 @@ button.delete {
 .add-event-section button {
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #444;
+  background-color: #804000;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 /* Your Events Section */
@@ -216,6 +265,7 @@ button.delete {
   background-color: #fff5e6;
   padding: 20px;
   width: 80%;
+  margin-top: 30px;
   margin: 0 auto 30px;
   border-radius: 5px;
 }
@@ -230,16 +280,20 @@ button.delete {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  margin-bottom: 12px;
-  background-color: #fdf3e7;
+  padding: 12px 24px;
+  margin-bottom: 10px;
+  background-color: #fff5e6;
   border-radius: 8px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  text-align: center;
 }
 
 /* Event Title */
 .event-title {
-  flex: 2;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 16px;
   font-weight: 500;
 }
@@ -247,15 +301,22 @@ button.delete {
 /* Event Date */
 .event-date {
   flex: 1;
-  text-align: center;
-  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* THIS centers it vertically */
+  font-size: 16px;
   color: #555;
+  height: 100%; /* Ensures full height alignment */
 }
+
 
 /* Buttons on Right */
 .actions {
+  flex: 1;
   display: flex;
+  justify-content: flex-end;
   gap: 10px;
+
 }
 
 /* Edit & Delete Buttons */
