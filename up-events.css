@@ -185,6 +185,7 @@ body {
 }
 
 /* Event Card */
+
 .event-card {
   background-color: #fff6db;
   width: 80%;
@@ -195,7 +196,6 @@ body {
   border-radius: 5px;
   align-items: stretch; /* 👈 this is key */
 }
-
 
 .event-card img {
   height: auto;              /* Keep aspect ratio */
@@ -216,6 +216,9 @@ body {
   font-family: 'Georgia', serif;
 }
 
+
+
+
 .detail {
   font-size: 18px;
   line-height: 1.5;
@@ -224,18 +227,15 @@ body {
   gap: 10px;
 }
 
-
+.detail i {
+  color: #804000;
+  font-size: 18px;
+}
 .event-details .category {
   color: #444;
   font-size: 16px;
 }
 
-
-
-.detail i {
-  color: #804000;
-  font-size: 18px;
-}
 
 /* Bottom Brown Line */
 .bottom-border {

@@ -216,6 +216,7 @@ body {
   font-family: 'Georgia', serif;
 }
 
+
 .detail {
   font-size: 18px;
   line-height: 1.5;
@@ -224,18 +225,15 @@ body {
   gap: 10px;
 }
 
-
+.detail i {
+  color: #804000;
+  font-size: 18px;
+}
 .event-details .category {
   color: #444;
   font-size: 16px;
 }
 
-
-
-.detail i {
-  color: #804000;
-  font-size: 18px;
-}
 
 /* Bottom Brown Line */
 .bottom-border {
