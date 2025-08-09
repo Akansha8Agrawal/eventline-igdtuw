@@ -1,15 +1,15 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
 }
+
 body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-   padding-top: 10px; 
 }
 
 .top-bar {
@@ -139,6 +139,23 @@ body {
   padding: 0 20px;
   text-align: center;
 }
+
+.upload-btn {
+  background-color: #ffefcc;
+  border: 2px solid #e0c080;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #804000;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background-color: #ffd966;
+}
+
 
 /* Footer Bar (like in Figma screenshot) */
 .footer-bar {

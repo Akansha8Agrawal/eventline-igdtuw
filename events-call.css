@@ -1,94 +1,119 @@
-/* Reset & Base */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: white;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff;
+  color: #2b1e1e;
 }
 
-/* Top Bar */
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .top-bar {
-    background-color: #a9744f; /* Brown background */
-    color: white;
-    padding: 6px 15px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.left-section {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-.left-section .logo {
-    height: 16px; /* Adjust size */
-}
-.right-section {
-    font-weight: bold;
+  background-color: #804000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  font-weight: 500;
+  margin-top: 20px;
 }
 
-/* IGDTUW Events Title */
-.logo-bar {
-    background-color: white;
-    padding: 15px 15px 5px;
-    color: #5a3b27;
-}
-.logo-bar h1 {
-    margin: 0;
-    font-size: 20px;
-}
-.logo-bar .igd {
-    font-weight: bold;
-}
-.logo-bar .events {
-    font-weight: normal;
+.top-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Form Container */
+.logo {
+  height: 30px;
+  width: auto;
+}
+.eventline-title {
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+.heading-igdtuw {
+  margin-left: 30px;
+}
+
+.igdtuw-text {
+  color: #9b5500;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.event-call-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+  margin-top: 30px;
+  color: #333;
+}
 .form-container {
-    text-align: center;
-    margin-top: 40px;
-}
-.form-container form {
-    display: inline-block;
-    text-align: left;
-}
-.form-container label {
-    display: block;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #5a3b27;
-}
-.form-container input {
-    width: 250px;
-    padding: 8px;
-    margin-top: 5px;
-    border-radius: 8px;
-    border: none;
-    background-color: #fef6e4;
-    font-size: 16px;
-}
-.form-container button {
-    display: block;
-    margin: 30px auto 0;
-    padding: 8px 20px;
-    background-color: #a9744f;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.form-container button:hover {
-    background-color: #8a5e3d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
 }
 
-/* Bottom Bar */
-.bottom-bar {
-    background-color: #a9744f;
-    height: 25px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.form-container h1 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.form-container .light-text {
+  font-weight: normal;
+  color: #333;
+  font-size: 22px;
+}
+
+.invitation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  width: 300px;
+}
+
+.invitation-form label {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.invitation-form input {
+  padding: 12px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #fdf5dc;
+}
+
+.invitation-form button {
+  background-color: #8B4C1C;
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.invitation-form button:hover {
+  background-color: #6a3914;
+}
+
+/* Footer brown bar */
+.footer-bar {
+  background-color: #854d1e;
+  height: 30px;
+  margin-top: 170px;
 }

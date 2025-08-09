@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events Call - IGDTUW</title>
-    <link rel="stylesheet" href="events-call.css">
+  <meta charset="UTF-8">
+  <title>EventLine IGDTUW - Admin Login</title>
+  <link rel="stylesheet" href="events-call.css">
 </head>
 <body>
 
-    <!-- Top Brown Bar -->
-    <div class="top-bar">
-        <div class="left-section">
-            INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN
-            <img src="images/logo.png" alt="IGDTUW Logo" class="logo">
-        </div>
-        <div class="right-section">
-            EventLine IGDTUW
-        </div>
-    </div>
+      <div class="top-bar">
+  <div class="top-bar-left">
+    <span>INDIRA GANDHI DELHI TECHNICAL UNIVERSITY FOR WOMEN</span>
+    <img src="images/logo.png" alt="Logo" class="logo" />
+  </div>
+  <div class="top-bar-right d-flex align-items-center gap-3">
+    <span class="eventline-title">EventLine IGDTUW</span>
+    
+  </div>
+</div>
 
-    <!-- IGDTUW Events Call Title -->
-    <div class="logo-bar">
-        <h1><span class="igd">IGDTUW</span> <span class="events">| EVENTS CALL</span></h1>
-    </div>
+<div class="text-start mb-4">
+    <h2 class="heading-igdtuw">
+      <span class="igdtuw-text">IGDTUW |</span>
+      <span class="event-call-text">EVENTS CALL</span>
+    </h2>
+</div>
 
-    <!-- Form Container -->
-    <div class="form-container">
-        <form>
-            <label>Enter Invitation Code*</label>
-            <input type="text" placeholder="">
+  <main class="form-container">
+    <h1>IGDTUW <span class="light-text">| EVENTS CALL</span></h1>
 
-            <label>Enter Club Name*</label>
-            <input type="text" placeholder="">
+    <form class="invitation-form">
+      <label for="invitation">Enter Invitation Code*</label>
+      <input type="text" id="invitation" name="invitation" required>
 
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+      <label for="club">Enter Club Name*</label>
+      <input type="text" id="club" name="club" required>
 
-    <!-- Bottom Brown Bar -->
-    <div class="bottom-bar"></div>
+      <button type="submit">Submit</button>
+    </form>
+  </main>
 
+  <!-- Footer Bar -->
+  <div class="footer-bar"></div>
 </body>
 </html>
-
-
