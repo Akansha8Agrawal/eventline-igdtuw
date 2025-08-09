@@ -1,0 +1,94 @@
+/* Reset & Base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Top Bar */
+.top-bar {
+    background-color: #a9744f; /* Brown background */
+    color: white;
+    padding: 6px 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.left-section .logo {
+    height: 16px; /* Adjust size */
+}
+.right-section {
+    font-weight: bold;
+}
+
+/* IGDTUW Events Title */
+.logo-bar {
+    background-color: white;
+    padding: 15px 15px 5px;
+    color: #5a3b27;
+}
+.logo-bar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+.logo-bar .igd {
+    font-weight: bold;
+}
+.logo-bar .events {
+    font-weight: normal;
+}
+
+/* Form Container */
+.form-container {
+    text-align: center;
+    margin-top: 40px;
+}
+.form-container form {
+    display: inline-block;
+    text-align: left;
+}
+.form-container label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #5a3b27;
+}
+.form-container input {
+    width: 250px;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #fef6e4;
+    font-size: 16px;
+}
+.form-container button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 8px 20px;
+    background-color: #a9744f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.form-container button:hover {
+    background-color: #8a5e3d;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+    background-color: #a9744f;
+    height: 25px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

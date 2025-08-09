@@ -225,24 +225,11 @@ body {
 }
 
 
-.event-details .category {
-  color: #444;
-  font-size: 16px;
+.events-call-heading .call {
+  color: #000;
+  font-weight: 400;
+  margin-left: 8px;
 }
 
 
 
-.detail i {
-  color: #804000;
-  font-size: 18px;
-}
-
-/* Bottom Brown Line */
-.bottom-border {
-  height: 20px;
-  background-color: #804000;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-}
