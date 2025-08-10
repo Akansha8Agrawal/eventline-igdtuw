@@ -9,31 +9,39 @@
 </head>
 <body>
 
-    <!-- Top Navigation Bar -->
-    <div class="navbar">
-        <div class="nav-left">
-            EventLine IGDTUW
-        </div>
-        <div class="nav-right">
-            <a href="index.html">Home</a>
-            <a href="events-admin.html">Events</a>
-            
-            <a href="gallery-admin.html">Gallery</a>
-           
-           <a href="profile.html"><i class="fas fa-user"></i></a>
-           <a href="about.html"><i class="fas fa-info-circle"></i></a>
-        </div>
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>EventLine IGDTUW</span>
+  </div>
+  <div class="top-bar-right">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="gallery1.html">Gallery</a>
+    </nav>
+    <div class="navbar-icons">
+      
+      <a href="profile.html"><i class="fas fa-user"></i></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i></a>
     </div>
+  </div>
+</div>
 
-    <!-- IGDTUW Title -->
-    <div class="logo-bar">
-        <h1><span class="igd">IGDTUW</span> <span class="events">| EVENTS CALL</span></h1>
-    </div>
+<!-- Header Section -->
+<div class="heading-igdtuw">
+  <span class="igdtuw-text">IGDTUW|</span>
+  <span class="event-call-text">EVENTS CALL</span>
+</div>
 
     <!-- Profile Section -->
     <div class="profile-container">
         <h2>Profile</h2>
-        <img src="images/profile.png" alt="Profile Picture" class="profile-pic">
+        <!-- Profile Picture -->
+<img src="images/profile.png" alt="Profile Picture" class="profile-pic" id="profilePic">
+
+<!-- Hidden File Input -->
+<input type="file" id="fileInput" accept="image/*" style="display: none;">
 
         <div class="profile-details">
             <label>Name:</label>
@@ -49,11 +57,34 @@
             <input type="text" readonly>
         </div>
 
-        <button class="edit-btn">[Edit Profile]</button>
+        <button class="edit-btn">Edit Profile</button>
     </div>
 
     <!-- Bottom Brown Bar -->
     <div class="bottom-bar"></div>
+
+<script>
+    const profilePic = document.getElementById('profilePic');
+    const fileInput = document.getElementById('fileInput');
+
+    // Profile pic par click hone par file chooser khulega
+    profilePic.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    // Jab user file select kare, image update ho jayegi
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                profilePic.src = e.target.result; // Image preview update
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
 
 </body>
 </html>

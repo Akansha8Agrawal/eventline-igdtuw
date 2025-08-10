@@ -2,46 +2,141 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: white;
+    padding-top: 20px;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: #a9744f;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 14px;
-}
-.navbar a:hover {
-    text-decoration: underline;
-}
-.navbar i {
-    margin-left: 10px;
-    cursor: pointer;
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+  font-weight: 500;
 }
 
-/* IGDTUW Events Title */
-.logo-bar {
-    background-color: white;
-    padding: 15px 15px 5px;
-    color: #5a3b27;
+.top-bar-right i {
+  background-color: white;
+  color: #804000;
+  padding: 6px;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  
+  font-size: 14px;
+  cursor: pointer;
 }
-.logo-bar h1 {
-    margin: 0;
-    font-size: 20px;
+
+.top-bar {
+  background-color: #804000;
+  height: 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
 }
-.logo-bar .igd {
-    font-weight: bold;
+
+.top-bar-left span {
+  font-size: 18px;
+  font-weight: 500;
 }
-.logo-bar .events {
-    font-weight: normal;
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.navbar-icons i {
+  background-color: white;
+  color: #804000;
+  border-radius: 50%;
+  padding: 6px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.navbar-icons i:hover {
+  box-shadow: 0 0 10px 3px rgba(255, 255, 255, 0.8);
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+.navbar .nav-links a:hover {
+  background-color: #c69c6d;
+  color: black;
+}
+
+.navbar .nav-links i {
+  margin-left: 10px;
+  cursor: pointer;
+
+  font-family: Georgia, serif;
+}
+
+/* Fix heading text alignment */
+.heading-igdtuw {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  margin-top: 40px;
+  padding-left: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.igdtuw-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #804000;
+}
+
+.event-call-text {
+  font-size: 18px;
+  font-weight: normal;
+  margin-left: 8px;
+  color: #444;
 }
 
 /* Profile Section */
@@ -60,6 +155,7 @@ body {
     background-color: black;
     display: block;
     margin: 0 auto 20px;
+    cursor: pointer;
 }
 .profile-details {
     width: 250px;
@@ -82,20 +178,18 @@ body {
 
 /* Edit Profile Button */
 .edit-btn {
-    background-color: #fef6e4;
-    border: none;
-    padding: 8px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-}
-.edit-btn:hover {
-    background-color: #f5e3c3;
+  background-color: #854d1e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 /* Bottom Bar */
 .bottom-bar {
-    background-color: #a9744f;
+    background-color: #854d1e;
     height: 25px;
     position: fixed;
     bottom: 0;
