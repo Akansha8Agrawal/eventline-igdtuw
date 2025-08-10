@@ -84,6 +84,22 @@
         }
     });
 </script>
+<script>
+const editBtn = document.querySelector('.edit-btn');
+const inputs = document.querySelectorAll('.profile-details input');
+
+editBtn.addEventListener('click', () => {
+    // Toggle edit mode
+    if (editBtn.textContent === "Edit Profile") {
+        inputs.forEach(input => input.removeAttribute('readonly'));
+        editBtn.textContent = "Save Profile";
+    } else {
+        inputs.forEach(input => input.setAttribute('readonly', true));
+        editBtn.textContent = "Edit Profile";
+    }
+});
+</script>
+
 
 
 </body>
