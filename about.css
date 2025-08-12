@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding-top: 20px;  /* visible gap at top */
+  background-color: #fffdf8;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.top-bar {
+  background-color: #804000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  font-weight: 500;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.icon-buttons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  background-color: white;
+  border-radius: 50%;
+  color: #804000;
+  font-size: 16px;
+}
+
+/* ---------- WHITE SLIDING UNDERLINE ONLY FOR TEXT LINKS ---------- */
+.top-bar a.text-link {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.top-bar a.text-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.top-bar a.text-link:hover::after {
+  width: 100%;
+}
+
+.glow-icon:hover {
+  box-shadow: 0 0 12px 5px rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1);
+}
+
+
+
+
+.intro-text {
+  
+  padding-left: 80px; /* Adjust this value as needed */
+  padding-right: 80px; /* Optional for symmetry */
+  text-align: left; /* Optional: aligns text to the left */
+}
+.commit-text {
+  padding-left: 40px; /* Adjust this value as needed */
+  padding-right: 40px; /* Optional for symmetry */
+  text-align: left; /* Optional: aligns text to the left */
+}
+
+.heading-igdtuw {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.igdtuw-text {
+  font-size: 40px;
+  font-weight: bold;
+  color: #804000;
+}
+
+.event-call-text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 8px;
+  margin-top: 30px;
+  color: #333;
+}
+
+.team {
+  padding: 30px 40px;
+  text-align: left;
+}
+.team p {
+  line-height: 1.6;
+}
+
+
+.about-text {
+  color: #804000;
+}
+
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #804000;
+  
+}
+
+
+.intro {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+.offerings ul {
+  list-style-type: none;
+  padding-left: 5;
+
+}
+
+.offerings li {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+
+.about-section h2 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.commitment, .offerings, .team {
+  padding: 20px 40px;
+  text-align: left;
+}
+
+
+.profiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.profile-card {
+  background-color: #fff6ea;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.profile-img {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.footer-note {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+  color: #777;
+  font-size: 14px;
+}
+/* Bottom Brown Line */
+.bottom-border {
+  height: 30px;
+  background-color: #804000;
+  margin-top: 80px;
+  width: 100%;
+}
+/* Make team profiles stack on smaller screens */
+@media (max-width: 768px) {
+  .profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-card {
+    width: 90%; /* Full width with padding */
+    margin-bottom: 20px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar nav a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: #fffdf8;
+  color: #333;
+  border-bottom: 15px solid 804000; /* Brown bottom border */
+}

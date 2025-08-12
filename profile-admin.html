@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - EventLine IGDTUW</title>
+    <link rel="stylesheet" href="profile-admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+   
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="top-bar-left">
+    <span>EventLine IGDTUW</span>
+  </div>
+  <div class="top-bar-right">
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+       <a href="admin.html">Admin Dashboard</a>
+      <a href="gallery-admin.html">Gallery</a>
+    </nav>
+    <div class="navbar-icons">
+      
+      <a href="profile.html"><i class="fas fa-user"></i></a>
+      <a href="about.html"><i class="fas fa-info-circle"></i></a>
+    </div>
+  </div>
+</div>
+
+    <!-- Profile Section -->
+    <div class="profile-container">
+        <h2>Profile</h2>
+<!-- Profile Picture -->
+<img src="images/profile.png" alt="Profile Picture" class="profile-pic" id="profilePic">
+
+<!-- Hidden File Input -->
+<input type="file" id="fileInput" accept="image/*" style="display: none;">
+
+        <div class="profile-details">
+            <label>Name:</label>
+            <input type="text" readonly>
+
+            <label>Email:</label>
+            <input type="text" readonly>
+
+            <label>Role:</label>
+            <input type="text" readonly>
+
+            <label>Joined:</label>
+            <input type="text" readonly>
+        </div>
+
+        <button class="edit-btn">Edit Profile</button>
+    </div>
+
+    <!-- Bottom Brown Bar -->
+    <div class="bottom-bar"></div>
+
+<script>
+    const profilePic = document.getElementById('profilePic');
+    const fileInput = document.getElementById('fileInput');
+
+    // Profile pic par click hone par file chooser khulega
+    profilePic.addEventListener('click', () => {
+        fileInput.click();
+    });
+
+    // Jab user file select kare, image update ho jayegi
+    fileInput.addEventListener('change', () => {
+        const file = fileInput.files[0];
+        if (file) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                profilePic.src = e.target.result; // Image preview update
+            };
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
